@@ -3,8 +3,6 @@
 # TASK 1
 ## Subtask 1 - wyciągamy karteczki
 8/10 punktów
-##Subtask 2 - dodaj nowe repozytorium do GitHub
-Jak widać :D
 ## Subtask 3 - formatowanie README file w GitHub
 Cześć! Nazywam się Paulina i w 2023 roku zdecydowałam się zmienić w swoim życiu wiele - jednym z tych elementów jest praca. Choć z wykształcenia jestem historyczką (histeryczką haha), to testowanie zainteresowało mnie na tyle, by spróbować podjąć niniejsze wyzwanie. Na obecnym etapie jestem zupełnym żółtodziobem (do tego stopnia, że ciężko poruszać mi się nawet po GitHubie czy Jirze), ale wiele jest we mnie chęci do nauki i rozwoju! Chciałabym w najbliższym roku stać się odpowiedzialnym i przygotowanym juniorem testowania, by potem powoli coraz lepiej wytykać innym błędy (żart!). Wierzę, że wyzwanie DareIT mi to umożliwi. :)
 ## Subtask 4 - testy eksploatacyjne - poznaj aplikację
