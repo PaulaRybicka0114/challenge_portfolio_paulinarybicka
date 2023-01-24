@@ -47,3 +47,13 @@ Na pierwszy rzut oka wydaje się, że aplikacja jest intucyjna i prosta w obsłu
 
 ### Subtask 5 - Jira
 Dołączyłam do zespołu
+
+# TASK 2
+### Subtask 1 - pisanie przypadków testowych na podstawie User Story
+[Link do mojego zadania numer 1 :seedling:](https://docs.google.com/document/d/1xZzAiv-qPUc-sOcceb53-VZilA6fl0uwffPWm7YxOIE/edit?usp=sharing)
+### Subtask 2 - pisanie przypadków testowych na podstawie własnych doświadczeń
+[Link do mojego zadania numer 2 :herb:](https://docs.google.com/document/d/1FPu1Hi3YssMdmY61RP9hfx1K_zwJDi-lV-BI50-fq6I/edit?usp=sharing)
+### Subtask 3 - po co piszemy test case'y?
+![alt text](https://testerzy.pl/assets/img/articles/old/jest-jedna-odpowiedz.jpg)
+
+A tak na poważnie... :mag_right: Tworzenie test case'ów jest moim jednym z najistotniejszych zadań testera oprogramowania. Wymyślanie różnych przypadków testowych nie tylko wzmacnia naszą testerską docierkliwość i kreatywność w wymyślaniu problemów, ale przede wszystkim daje pewność, że w trakcie naszej pracy nie umknęła nam żadna funkcjonalność. Zbiór takich przypadków testowych stanie się później także bazą sporządzanych przez nas raportów testów. Test case'y mówią bardzo wiele o testowanej stronie/aplikacji, wobec czego stanowią również nieocenioną pomoc dla nowych członków zespołu pracującego na danym projekcie, którzy chcą się z nią zapoznać. 
