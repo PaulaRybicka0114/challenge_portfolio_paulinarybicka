@@ -1,11 +1,11 @@
 # challenge_portfolio_paulinarybicka
 
-# TASK 1
+# TASK 1 - testy eksploracyjne
 ### Subtask 1 - wyciągamy karteczki
 8/10 punktów :tada:
 ### Subtask 3 - formatowanie README file w GitHub - dlaczego zdecydowałaś się na udział w challenge_portfolio?
 Cześć! Nazywam się Paulina i w 2023 roku zdecydowałam się zmienić w swoim życiu wiele - jednym z tych elementów jest praca. Choć z wykształcenia jestem ~~histeryczką~~ historyczką (:laughing:), to testowanie zainteresowało mnie na tyle, by podjąć to wyzwanie. Na obecnym etapie jestem zupełnym żółtodziobem (do tego stopnia, że ciężko poruszać mi się nawet po GitHubie czy Jirze), ale wiele jest we mnie chęci do nauki i rozwoju! Chciałabym w najbliższym roku stać się odpowiedzialnym i przygotowanym juniorem testowania, by potem coraz lepiej wytykać innym błędy (żart!). Wierzę, że wyzwanie DareIT mi to umożliwi. :blush:
-### Subtask 4 - testy eksploatacyjne - poznaj aplikację
+### Subtask 4 - testy eksploracyjne - poznaj aplikację
 **1. Na czym polega ta aplikacja i do czego służy?**
 * aplikacja to swojego rodzaju baza danych na temat poszczególnych piłkarzy - ich imiona i nazwiska, wiek, pozycja, klub, a także raporty z rozegranych meczy
 * ma za zadanie pomóc tzw. łowcom talentów w wyszukiwaniu pożądanych zawodników z całego zbioru
@@ -48,7 +48,7 @@ Na pierwszy rzut oka wydaje się, że aplikacja jest intucyjna i prosta w obsłu
 ### Subtask 5 - Jira
 Dołączyłam do zespołu
 
-# TASK 2
+# TASK 2 - przypadki testowe (test cases)
 ### Subtask 1 - pisanie przypadków testowych na podstawie User Story
 [Link do mojego zadania numer 1 :seedling:](https://docs.google.com/document/d/1xZzAiv-qPUc-sOcceb53-VZilA6fl0uwffPWm7YxOIE/edit?usp=sharing)
 ### Subtask 2 - pisanie przypadków testowych na podstawie własnych doświadczeń
@@ -56,7 +56,16 @@ Dołączyłam do zespołu
 ### Subtask 3 - po co piszemy test case'y?
 ![alt text](https://testerzy.pl/assets/img/articles/old/jest-jedna-odpowiedz.jpg)
 
-A tak na poważnie... :mag_right: Tworzenie test case'ów jest moim jednym z najistotniejszych zadań testera oprogramowania. Wymyślanie różnych przypadków testowych nie tylko wzmacnia naszą testerską docierkliwość i kreatywność w wymyślaniu problemów, ale przede wszystkim daje pewność, że w trakcie naszej pracy nie umknęła nam żadna funkcjonalność. Zbiór takich przypadków testowych stanie się później także bazą sporządzanych przez nas raportów testów. Test case'y mówią bardzo wiele o testowanej stronie/aplikacji, wobec czego stanowią również nieocenioną pomoc dla nowych członków zespołu pracującego na danym projekcie, którzy chcą się z nią zapoznać. 
+A tak na poważnie... :mag_right: Tworzenie test case'ów jest moim zaniem jednym z najistotniejszych zadań testera oprogramowania. Wymyślanie różnych przypadków testowych nie tylko wzmacnia naszą testerską docierkliwość i kreatywność w wymyślaniu problemów, ale przede wszystkim daje pewność, że w trakcie naszej pracy nie umknęła nam żadna funkcjonalność. Zbiór takich przypadków testowych stanie się później także bazą sporządzanych przez nas raportów testów. Test case'y mówią bardzo wiele o testowanej stronie/aplikacji, wobec czego stanowią również nieocenioną pomoc dla nowych członków zespołu pracującego na danym projekcie, którzy chcą się z nią zapoznać. 
 
 ### Subtask 4 - pisanie przypadków testowych na podstawie własnych doświadczeń (aplikacja mobilna PickEatUp)
 [Link do mojego zadania numer 4 :four_leaf_clover:](https://docs.google.com/document/d/1ggp4R4D1-amPfFjD827dhJ1Jy-3eLA9R2AbQxq7ZL14/edit?usp=sharing)
+
+# TASK 3 - raportowanie błędów
+### Subtask 1 - utworzenie formatki do zgłaszania błędów systemu
+[Oto moja formatka! :sunflower:](https://docs.google.com/spreadsheets/d/1NW57GwwUnjMHU6PSPcICeUSy3ALyG7JaiKGPpA1wJE4/edit?usp=sharing)
+### Subtask 2 - testowanie według planów testów i raportowania błędów
+Wszystko jest tam :point_up:
+### Subtask 3 - raport z wykonanych testów
+[Jest i on :muscle:](https://docs.google.com/document/d/1pV_uc5rgfgzhnrVOhAIunLe-NPP7Kt1eJiM27s-mhgY/edit?usp=sharing)
+### Subtask 4 - sesja testów eksploracyjnych
