@@ -69,3 +69,4 @@ Wszystko jest tam :point_up:
 ### Subtask 3 - raport z wykonanych testów
 [Jest i on :muscle:](https://docs.google.com/document/d/1pV_uc5rgfgzhnrVOhAIunLe-NPP7Kt1eJiM27s-mhgY/edit?usp=sharing)
 ### Subtask 4 - sesja testów eksploracyjnych
+[Moim zadaniem jest obsessive-compulsive tour :fire:](https://docs.google.com/spreadsheets/d/18SOzG8UrxqBPdEnDUFCoeiyL4_LCXVI-8x2n0KvR5UQ/edit?usp=sharing)
