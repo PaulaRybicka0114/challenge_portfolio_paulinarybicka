@@ -64,7 +64,7 @@ A tak na poważnie... :mag_right: Tworzenie test case'ów jest moim zaniem jedny
 # TASK 3 - raportowanie błędów
 ### Subtask 1 - utworzenie formatki do zgłaszania błędów systemu
 [Oto moja formatka! :sunflower:](https://docs.google.com/spreadsheets/d/1NW57GwwUnjMHU6PSPcICeUSy3ALyG7JaiKGPpA1wJE4/edit?usp=sharing)
-### Subtask 2 - testowanie według planów testów i raportowania błędów
+### Subtask 2 - testowanie według planów testów i raportowanie błędów
 Wszystko jest tam :point_up:
 ### Subtask 3 - raport z wykonanych testów
 [Jest i on :muscle:](https://docs.google.com/document/d/1pV_uc5rgfgzhnrVOhAIunLe-NPP7Kt1eJiM27s-mhgY/edit?usp=sharing)
