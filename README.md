@@ -79,7 +79,7 @@ Jak wyżej :arrow_up:
 ### Subtask 3 - do czego służy ta aplikacja?
 **1. Do czego służy ta aplikacja? Jaki jest cel tej aplikacji?**
 
-Aplikacja ta służy przede wszystkim wystawianiu różnych produktów lub usług do sprzedaży/oddania/wymiany. Użytkownicy platformy mogą z niej korzystać będąc “nadawcą” lub “odbiorcą” przedmiotu danej aukcji. Celem aplikacji jest również zarobek, zarówno dla użytkowników, którzy skutecznie zakończyli swoją aukcję sprzedażą, dla użytkowników, którzy zyskali tym jakiś przedmiot/usługę, ale także dla twórców aplikacji, dzięki zyskowi z prowizji sprzedaży.
+Aplikacja ta służy przede wszystkim wystawianiu różnych produktów lub usług do sprzedaży/oddania/wymiany. Użytkownicy platformy mogą z niej korzystać będąc “nadawcą” lub “odbiorcą” przedmiotu danej aukcji. Celem aplikacji jest również zarobek, zarówno dla użytkowników, którzy skutecznie zakończyli swoją aukcję sprzedażą; dla użytkowników, którzy zyskali tym jakiś przedmiot/usługę, ale także dla twórców aplikacji, dzięki zyskowi z prowizji sprzedaży.
 
 **2. Kto ma być użytkownikiem końcowym aplikacji?**
 
@@ -87,14 +87,22 @@ Użytkownikiem końcowym aplikacji ma być osoba, która ostatecznie będzie z n
 
 **3. Czy według Ciebie ta aplikacja jest user friendly?**
 
-Aplikacja OLX zasadniczo zaprojektowana jest zgodnie z zasadami UX oraz UI. Za przyjazność interfejsu względem użytkownika odpowiada między innymi przejrzysty panel zawierający najważniejsze funkcjonalności, znajdujący się w dolnej części ekranu (w zasięgu kciuka). Łatwo dostępna jest także wyszukiwarka, która znajduje się w oczekiwanym miejscu (górna część ekranu). 
+Aplikacja OLX zasadniczo zaprojektowana jest zgodnie z wytycznymi user friendly. Za przyjazność interfejsu względem użytkownika odpowiada między innymi przejrzysty panel zawierający najważniejsze funkcjonalności, znajdujący się w dolnej części ekranu (w zasięgu kciuka). Łatwo dostępna jest także wyszukiwarka, która znajduje się w oczekiwanym miejscu (górna część ekranu). Aplikacja potrafi generować powiadomienia push, dzięki czemu użytkownik nawet bez wchodzenia w nią, jest w stanie dowiedzieć się o jakiejś zaistniałej akcji. OLX dba także o bezpieczeństwo użytkownika i jego płatności, ofertując użytkownikowi możliwość skorzystania z popularnych metod płatności, jak np. Blik. Aplikacja zawiera w sobie jednak również takie niedociągnięcia, jak brak możliwości użytkowania w trybie offline (choćby wybranych funkcjonalności), czy też brak wyraźnego wsparcia osób niepełnosprawnych (np. wzrokowo, czy słuchowo) w korzystaniu z niej.
 
 **4. Jak byś usprawniła aplikację? Co byś w niej poprawiła? Czy masz jakiś pomysł na dodatkową funkcjonalność?**
 
-Aplikacja, choć dopracowana, nie jest pozbawiona wad. W moim odczuciu niedoskonały jest system szybkiego dodawania danej oferty (bez wchodzenia w nią) do ulubionych. Przycisk serca, który do tego służy jest na tyle mały, że wielokrotnie omyłkowo klikałam minimalnie obok przycisku, co skutkowało wejściem w ofertę. Do aplikacji dodałabym również licznik ofert obserwowanych, gdyż po osiągnięciu puli 150 ofert aplikacja blokuje możliwość dodawania kolejnych. Dodanie licznika pomogłoby użytkownikowi kontrolować tę liczbę.
+Aplikacja, choć dopracowana, nie jest pozbawiona wad. W moim odczuciu niedoskonały jest system szybkiego dodawania danej oferty (bez wchodzenia w nią) do ulubionych. Przycisk serca, który do tego służy jest na tyle mały, że wielokrotnie omyłkowo klikałam minimalnie obok przycisku, co skutkowało wejściem w ofertę. Do aplikacji dodałabym również licznik ofert obserwowanych, gdyż po osiągnięciu puli 150 ofert aplikacja blokuje możliwość dodawania kolejnych. Dodanie licznika pomogłoby użytkownikowi kontrolować tę liczbę. Jak wspomniałam w poprzednim punkcie, rozwinęłabym też w aplikacji szersze wsparcie dla osób niepełnosprawnych, by również swobodnie mogły z niej korzystać
 
 **5. Jakie dostrzegasz różnice pomiędzy testowaniem aplikacji internetowej a natywnej?**
 
 Odniosłam wrażenie, że aplikacja natywna częściej może wywołać bezpośrednią interakcję z urządzeniem, z którego korzystamy. Może się zdarzyć, że odeśle nas bezpośrednio do ustawień urządzenia, czy też poprosi nas o zgodę na wykorzystanie jego zasobów (np. zdjęć). Testując aplikację natywną mamy większą możliwość zbadać jej wpływ i działanie oraz kompatybilność z danym urządzeniem. W statystykach możemy zauważyć jej zasobożerność, zarówno pamięciową, jak i baterii. Testując aplikację internetową zmuszeni jesteśmy korzystać z "pośrednika", którego rolę pełni przeglądarka. Okraja to proces testowania z wspomnianych już procesów i zdecydowanie go spłyca. 
 
 ### Subtask 4 - testy aplikacji mobilnej i webowej
+
+[Jira :mortar_board:](https://challengetesting.atlassian.net/jira/software/projects/CTP/boards/1)
+
+![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T4S4_1.png?raw=true)
+
+![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T4S4_2.png?raw=true)
+
+![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T4S4_3.png?raw=true)
