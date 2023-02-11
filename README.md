@@ -113,3 +113,32 @@ Odniosłam wrażenie, że aplikacja natywna częściej może wywołać bezpośre
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T4S4_3.png?raw=true)
 
 [Bug#4 SwipeTo](https://drive.google.com/file/d/1Xrzgafv8grcAYKcgWdGjRHNW-8mwcsj2/view?usp=share_link)
+
+# TASK 5 - SQL part 1
+### Subtask 1 - krótki kurs podstaw SQL
+
+### Subtask 3 - kilka zadań na rozgrzewkę
+
+**1. Wyświetl tabelę actors w kolejności alfabetycznej sortując po kolumnie surname
+
+SELECT *
+FROM actors
+ORDER BY Surname ASC
+
+**2. Wyświetl film, który powstał w 2019 roku
+
+**3. Wyświetl wszystkie filmy, które powstały między 1900 a 1999 rokiem
+
+**4. Wyświetl JEDYNIE tytuł i cenę filmów, które kosztują poniżej 7$
+
+**5. Użyj operatora logicznego AND, aby wyświetlić aktorów o actor_id pomiędzy 4-7 (włącznie). NIE UŻYWAJ operatora BETWEEN
+
+**6. Wyświetl klientów o id 2, 4, 6, wykorzystaj do tego warunek logiczny
+
+**7. Wyświetl klientów o id 1, 3, 5, wykorzystaj do tego operator AND
+
+**8. Wyświetl dane wszystkich osób z tabeli 'actors', których imię zaczyna się od ciągu "An"
+
+**9. Wyświetl dane kliena, który nie ma podanego adresu e-mail
+
+**10. Wyświetl wszystkie filmy, których cena wynosi powyżej 9$ oraz ich ID mieści się pomiędzy 2 i 8 movie_id
