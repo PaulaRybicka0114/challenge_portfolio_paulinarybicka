@@ -117,64 +117,175 @@ Odniosłam wrażenie, że aplikacja natywna częściej może wywołać bezpośre
 # TASK 5 - SQL part 1
 ### Subtask 1 - krótki kurs podstaw SQL
 
+Poznałam:
+
+* składnię i kolejność wykonywania instrukcji dla:
+SELECT (*, LIKE, TOP)
+
+FROM
+
+WHERE
+
+ORDER BY
+
+GROUP BY
+
+* operatory porównania:
+
+=
+
+!=
+
+<>
+
+>
+
+<
+
+ >=
+
+<=
+
+!<
+
+!>
+
+* operatory logiczne:
+
+AND
+
+BETWEEN
+
+IN
+
+LIKE
+
+NOT
+
+OR
+
+IS NULL / IS NOT NULL
+
+* funkcje skalarne:
+
+GETDATE
+
+UPPER
+
+LOWER
+
+DATEDIFF (HOUR, MONTH, YEAR etc.)
+
+* funkcje agregujące:
+
+COUNT ()
+
+SUM ()
+
+MIN ()
+
+* JOIN
+
+* AS
+
 ### Subtask 3 - kilka zadań na rozgrzewkę
 
-**1. Wyświetl tabelę actors w kolejności alfabetycznej sortując po kolumnie surname
+**1. Wyświetl tabelę actors w kolejności alfabetycznej sortując po kolumnie surname**
 
 SELECT *
+
 FROM actors
-ORDER BY Surname ASC
 
-**2. Wyświetl film, który powstał w 2019 roku
+ORDER BY surname ASC
+
+![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/0756a88acb0b78133b5be0f71d9c2ea0324287f2/T5S1.png?raw=true)
+
+**2. Wyświetl film, który powstał w 2019 roku**
 
 SELECT *
+
 FROM movies
+
 WHERE year_of_production = 2019
 
-**3. Wyświetl wszystkie filmy, które powstały między 1900 a 1999 rokiem
+![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T5S2.png?raw=true)
+
+**3. Wyświetl wszystkie filmy, które powstały między 1900 a 1999 rokiem**
 
 SELECT *
+
 FROM movies
+
 WHERE year_of_production BETWEEN 1900 AND 1999
 
-**4. Wyświetl JEDYNIE tytuł i cenę filmów, które kosztują poniżej 7$
+![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T5S3.png?raw=true)
+
+**4. Wyświetl JEDYNIE tytuł i cenę filmów, które kosztują poniżej 7$**
 
 SELECT title, price
+
 FROM movies
+
 WHERE price < 7
 
-**5. Użyj operatora logicznego AND, aby wyświetlić aktorów o actor_id pomiędzy 4-7 (włącznie). NIE UŻYWAJ operatora BETWEEN
+![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T5S4.png?raw=true)
+
+**5. Użyj operatora logicznego AND, aby wyświetlić aktorów o actor_id pomiędzy 4-7 (włącznie). NIE UŻYWAJ operatora BETWEEN**
 
 SELECT *
+
 FROM actors
+
 WHERE actor_id >= '4' AND actor_id <= '7'
 
-**6. Wyświetl klientów o id 2, 4, 6, wykorzystaj do tego warunek logiczny
+![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T5S5.png?raw=true)
+
+**6. Wyświetl klientów o id 2, 4, 6, wykorzystaj do tego warunek logiczny**
 
 SELECT *
+
 FROM customers
+
 WHERE customer_id IN (2, 4, 6)
 
-**7. Wyświetl klientów o id 1, 3, 5, wykorzystaj do tego operator AND
+![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T5S6.png?raw=true)
 
-SELECT * 
+**7. Wyświetl klientów o id 1, 3, 5, wykorzystaj do tego operator AND**
+
+SELECT *
+
 FROM customers
+
 WHERE customer_id BETWEEN 1 AND 5 AND customer_id %2 <> 0
 
-**8. Wyświetl dane wszystkich osób z tabeli 'actors', których imię zaczyna się od ciągu "An"
+![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T5S7.png?raw=true)
+
+**8. Wyświetl dane wszystkich osób z tabeli 'actors', których imię zaczyna się od ciągu "An"**
 
 SELECT *
+
 FROM actors
+
 WHERE name LIKE 'An%'
 
-**9. Wyświetl dane kliena, który nie ma podanego adresu e-mail
+![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T5S8.png?raw=true)
+
+**9. Wyświetl dane kliena, który nie ma podanego adresu e-mail**
 
 SELECT *
+
 FROM customers
+
 WHERE email IS NULL
 
-**10. Wyświetl wszystkie filmy, których cena wynosi powyżej 9$ oraz ich ID mieści się pomiędzy 2 i 8 movie_id
+![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T5S9.png?raw=true)
+
+**10. Wyświetl wszystkie filmy, których cena wynosi powyżej 9$ oraz ich ID mieści się pomiędzy 2 i 8 movie_id**
 
 SELECT *
+
 FROM movies
+
 WHERE price > 9 AND movie_id BETWEEN 2 AND 8
+
+![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T5S10.png?raw=true)
