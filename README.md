@@ -196,7 +196,7 @@ SELECT *
 
 FROM actors
 
-ORDER BY surname ASC
+ORDER BY surname ASC;
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/0756a88acb0b78133b5be0f71d9c2ea0324287f2/T5S1.png?raw=true)
 
@@ -206,7 +206,7 @@ SELECT *
 
 FROM movies
 
-WHERE year_of_production = 2019
+WHERE year_of_production = 2019;
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T5S2.png?raw=true)
 
@@ -216,7 +216,7 @@ SELECT *
 
 FROM movies
 
-WHERE year_of_production BETWEEN 1900 AND 1999
+WHERE year_of_production BETWEEN 1900 AND 1999;
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T5S3.png?raw=true)
 
@@ -226,7 +226,7 @@ SELECT title, price
 
 FROM movies
 
-WHERE price < 7
+WHERE price < 7;
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T5S4.png?raw=true)
 
@@ -236,7 +236,7 @@ SELECT *
 
 FROM actors
 
-WHERE actor_id >= '4' AND actor_id <= '7'
+WHERE actor_id >= '4' AND actor_id <= '7';
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T5S5.png?raw=true)
 
@@ -246,7 +246,7 @@ SELECT *
 
 FROM customers
 
-WHERE customer_id IN (2, 4, 6)
+WHERE customer_id IN (2, 4, 6);
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T5S6.png?raw=true)
 
@@ -256,7 +256,7 @@ SELECT *
 
 FROM customers
 
-WHERE customer_id BETWEEN 1 AND 5 AND customer_id %2 <> 0
+WHERE customer_id BETWEEN 1 AND 5 AND customer_id %2 <> 0;
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T5S7.png?raw=true)
 
@@ -266,7 +266,7 @@ SELECT *
 
 FROM actors
 
-WHERE name LIKE 'An%'
+WHERE name LIKE 'An%';
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T5S8.png?raw=true)
 
@@ -276,7 +276,7 @@ SELECT *
 
 FROM customers
 
-WHERE email IS NULL
+WHERE email IS NULL;
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T5S9.png?raw=true)
 
@@ -286,6 +286,146 @@ SELECT *
 
 FROM movies
 
-WHERE price > 9 AND movie_id BETWEEN 2 AND 8
+WHERE price > 9 AND movie_id BETWEEN 2 AND 8;
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T5S10.png?raw=true)
+
+# TASK 5 - SQL part 2
+
+### Subtask 1 - krótki kurs podstaw SQL
+
+**11. Popełniłam błąd wpisując nazwisko Ani Miler – wpisałam Muler. Znajdź i zastosuj funkcję, która poprawi mój karkołomny błąd**
+
+UPDATE customers
+
+SET surname='Miler'
+
+WHERE name='Ania';
+
+
+**12. Pobrałam za dużo pieniędzy od klienta, który kupił w ostatnim czasie film o id 4. Korzystając z funkcji join sprawdź, jak ma na imię klient i jakiego ma maila. W celu napisania mu wiadomości o pomyłce fantastycznej szefowej.**
+
+SELECT name, email
+
+FROM customers
+
+JOIN sale
+
+ON customers.customers_id = sale.customers_id
+
+AND movie_id = 4;
+
+
+**13. Na pewno zauważył_ś, że sprzedawca zapomniał wpisać emaila klientce Patrycji. Uzupełnij ten brak wpisując: pati@mail.com**
+
+UPDATE customers
+
+SET email='pati@mail.com'
+
+WHERE name='Patrycja'
+
+
+**14. Dla każdego zakupu wyświetl, imię i nazwisko klienta, który dokonał wypożyczenia oraz tytuł wypożyczonego filmu. (wykorzystaj do tego funkcję inner join, zastanów się wcześniej, które tabele Ci się przydadzą do wykonania ćwiczenia).**
+
+SELECT name, surname, title
+
+FROM sale
+
+INNER JOIN customers ON sale.customer_id = customers.customer_id
+
+INNER JOIN movies ON sale.movie_id = movies.movie_id;
+
+**15. W celu anonimizacji danych, chcesz stworzyć pseudonimy swoich klientów. - Dodaj kolumnę o nazwie ‘pseudonym’ do tabeli customer,- Wypełnij kolumnę w taki sposób, aby pseudonim stworzył się z dwóch pierwszych liter imienia i ostatniej litery nazwiska. Np. Natalie Pilling → Nag**
+
+ALTER TABLE customers 
+
+ADD pseudonym varchar(20);
+
+
+UPDATE customers
+
+SET pseudonym = 'Ols'
+
+WHERE customer_id = 1;
+
+UPDATE customers
+
+SET pseudonym = 'Kal'
+
+WHERE customer_id = 2;
+
+UPDATE customers
+
+SET pseudonym = 'Anr'
+
+WHERE customer_id = 3;
+
+UPDATE customers
+
+SET pseudonym = 'Par'
+
+WHERE customer_id = 4;
+
+UPDATE customers
+
+SET pseudonym = 'Mao'
+
+WHERE customer_id = 5;
+
+UPDATE customers
+
+SET pseudonym = 'Nag'
+
+WHERE customer_id = 6;
+
+**16. Wyświetl tytuły filmów, które zostały zakupione, wyświetl tabelę w taki sposób, aby tytuły się nie powtarzały.**
+
+SELECT DISTINCT title
+
+FROM movies
+
+JOIN sale ON movies.movie_id = sale.movie_id;
+
+**17. Wyświetl wspólną listę imion wszystkich aktorów i klientów, a wynik uporządkuj alfabetycznie. (Wykorzystaj do tego funkcji UNION)**
+
+SELECT name
+
+FROM actors
+
+UNION
+
+SELECT name
+
+FROM customers
+
+ORDER BY name ASC;
+
+**18. Polskę opanowała inflacja i nasz sklepik z filmami również dotknął ten problem. Podnieś cenę wszystkich filmów wyprodukowanych po 2000 roku o 2,5 $ (Pamiętaj, że dolar to domyślna jednostka- nie używaj jej nigdzie).**
+
+UPDATE movies
+
+SET price = price + 2.5
+
+WHERE year_of_production > 2000
+
+**19. Wyświetl imię i nazwisko aktora o id 4 i tytuł filmu, w którym zagrał**
+
+SELECT name, surname, title
+
+FROM cast
+
+JOIN actors ON cast.actor_id=actors.actor_id
+
+JOIN movies ON cast.movie_id=movies.movie_id
+
+AND actors.actor_id = 4;
+
+**20. A gdzie nasza HONIA!? Dodaj do tabeli customers nową krotkę, gdzie customer_id = 7, name = Honia, surname = Stuczka-Kucharska, email = honia@mail.com oraz pseudonym = Hoa**
+
+INSERT INTO customers (customer_id, name, surname, email, pseudonym)
+
+VALUES (7, 'Honia', 'Stuczka-Kucharska', 'honia@mail.com', 'Hoa');
+
+### Subtask 2 - test
+
+### Subtask 3 - tworzymy portfolio
