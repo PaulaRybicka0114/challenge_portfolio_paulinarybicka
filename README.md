@@ -1,104 +1,104 @@
 # challenge_portfolio_paulinarybicka
 
-# TASK 1 - testy eksploracyjne
-### Subtask 1 - wyciągamy karteczki
-8/10 punktów :tada:
-### Subtask 3 - formatowanie README file w GitHub - dlaczego zdecydowałaś się na udział w challenge_portfolio?
-Cześć! Nazywam się Paulina i w 2023 roku zdecydowałam się zmienić w swoim życiu wiele - jednym z tych elementów jest praca. Choć z wykształcenia jestem ~~histeryczką~~ historyczką (:laughing:), to testowanie zainteresowało mnie na tyle, by podjąć to wyzwanie. Na obecnym etapie jestem zupełnym żółtodziobem (do tego stopnia, że ciężko poruszać mi się nawet po GitHubie czy Jirze), ale wiele jest we mnie chęci do nauki i rozwoju! Chciałabym w najbliższym roku stać się odpowiedzialnym i przygotowanym juniorem testowania, by potem coraz lepiej wytykać innym błędy (żart!). Wierzę, że wyzwanie DareIT mi to umożliwi. :blush:
-### Subtask 4 - testy eksploracyjne - poznaj aplikację
-**1. Na czym polega ta aplikacja i do czego służy?**
-* aplikacja to swojego rodzaju baza danych na temat poszczególnych piłkarzy - ich imiona i nazwiska, wiek, pozycja, klub, a także raporty z rozegranych meczy
-* ma za zadanie pomóc tzw. łowcom talentów w wyszukiwaniu pożądanych zawodników z całego zbioru
-* umożliwia także tworzenie nowych profili piłkarzy oraz panelów meczy i raportów
+# TASK 1 - exploratory tests
+### Subtask 1 - entry test
+8/10 points :tada:
+### Subtask 3 - README file formatting in GitHub - why did you decide to participate in challenge_portfolio?
+Hi, my name is Paulina and in 2023 I have decided to change a lot of things in my life - one of those things is work. Although I am a ~~hysterian~~ historian (:laughing:), testing interested me enough to take on this challenge. At this stage I am a complete rookie, but there is a lot of willingness in me to learn and grow. I would liklanguage conversion from Polish to English and vice versae to become a responsible and prepared junior tester in the coming year, so that I can then get better and better at pointing out mistakes to others (joking!). I believe the DareIT challenge will enable me to do this. :blush:
+### Subtask 4 - exploratory tests - explore the application
+**1. What is this application about and what is it used for?**
+* the application is a kind of database on individual players - their names, age, position, club, as well as reports of matches played
+* is designed to help so-called 'talent hunters' find desirable players from the entire database
+* also allows the creation of new player profiles and match and report panels
 
-**2. Jakie funkcjonalności znajdują się w aplikacji? Do czego służą. Czy są intuicyjne, czy może byś coś zmienił_a?**
-* możliwość zalogowania i wylogowania
-* resetowanie hasła
-* tworzenie panelu piłkarza i jego edycja
-* korzystanie z przeglądarki zawodników
-* dodawanie meczów i raportów
-* konwertowanie danych do pliku csv i drukowanie zestawień
-* zamiana języka z polskiego na angielski i odwrotnie
+**2. What functionalities are included in the application? What are they used for. Are they intuitive, or would you change something?**
+* possibility to log in and out
+* password reset
+* creating and editing a player panel
+* use of the players' browser
+* adding matches and reports
+* convert data to csv file and print statements
+* language conversion from Polish to English and vice versa
 
-Ze względu na prostą, wręcz surową budowę strony, funkcjonalności względnie intuicyjne, jednak przez istniejące błędy trzeba się w niektórych przypadkach natrudzić (jak np. tworzenie raportu). Zmieniłabym sam system tworzenia profilu gracza - formularz ogranicza nas w wyborze do ustawienia pochodzenia z konkretnego województwa, a jednocześnie daje możliwość wpisania języka, którym piłkarz się posługuje i przetłumaczenia strony na język angielski. Niejako sugeruje to międzynarodowe potencjalne środowisko. Warto byłoby wobec tego rozbudować stronę o więcej opcji dotyczących pochodzenia, jak np. kraj. Dodatkowo uprościłabym niektóre funkcjonalności, jak np. możliwość wyboru danych odpowiedzi z rozwijalnej listy (jak wspomniane już wcześniej języki).
+Due to the simple, even crude design of the site, the functionalities are relatively intuitive, but due to the existing bugs, you have to take the trouble in some cases (such as creating a report). I would change the very system of creating a player's profile - the form limits us in the selection to setting the origin from a specific province, while at the same time giving the possibility to enter the language the footballer speaks and translate the page into English. In a way, this suggests an international potential environment. In view of this, it would be worthwhile to expand the page with more origin options, such as country. In addition, I would simplify some of the functionalities, such as the possibility to select given answers from a drop-down list (such as the languages already mentioned).
 
-**3. Oceń interfejs aplikacji (wygląd).**
+**3. Evaluate the application interface (appearance).**
 
-Jak już wspomniałam, interfejs aplikacji jest bardzo podstawowy. Na panelu głównym, poza jednym obrazkiem symbolizującym platformę (który moim zdaniem znajduje się w złym, nieintuicyjnym miejscu strony) oraz kilkoma ikonami symbolizującymi np. zmianę języka lub przycisk wylogowania, na próżno szukać innych "upiększeń". Strona jest względnie czytelna, jednak nie sposób nazwać jej minimalistyczną - raczej bardzo ubogą. Brakuje tutaj pracy designera, który oprócz praktycznych oczekiwań użytkownika, weźmie pod uwagę także aspekt wizualny.
+As I mentioned, the app's interface is very basic. On the main panel, apart from a single image symbolising the platform (which, in my opinion, is in a bad, unintuitive place on the page) and a few icons symbolising, for example, a change of language or a logout button, it is in vain to look for other "embellishments". The site is relatively easy to read, but it cannot be called minimalist - rather, it is very poor. What is missing here is the work of a designer who takes the visual aspect into account in addition to the practical expectations of the user.
 
-**4. Czy aplikacja jest intuicyjna?**
+**4. Is the application intuitive?**
 
-Na pierwszy rzut oka wydaje się, że aplikacja jest intucyjna i prosta w obsłudze (ma to także związek z aspektem wizualnym). Jednak im bardziej ponadpodstawowe czynności chcemy wykonać, tym aplikacja traci na przejrzystości.
-* Wyszukiwarka - lupka nie jest aktywnym elementem, co może wprowadzić użytkownika w błąd, jedynie enter zatwierdza wprowadzoną frazę wyszukiwania. Wygodnym udogodnieniem byłyby także podpowiedzi wyskakujące już w trakcie wpisywania poszukiwanej frazy
-* Sortowanie danych - brak wyraźnej opcji sortowania rosnąco/malejąco, dopiero po kliknięciu w nagłówki pokazuje się ta funkcjonalność
-* Brak możliwości eksportowania danych do innego formatu niż csv
-* Funkcjonalność "dodaj" dla "mecze i raporty" znajduje się w innym miejscu niż dla "gracze"
+At first glance, the app seems intuitive and easy to use (this also has to do with the visual aspect). However, the more over-the-top actions we want to perform, the app loses clarity.
+* Browser - the magnifying glass is not an active element, which can confuse the user, only the enter validates the entered search phrase. It would also be convenient to have pop-up prompts already when entering the search term
+* Sorting of data - no clear option to sort ascending/descending, only when clicking on headings does this functionality appear
+* No possibility to export data into a format other than csv
+* The "add" functionality for "matches and reports" is in a different location than for "players"
 
-**5. Czy zauważasz jakieś błędy? Albo coś wydaje Ci się błędem?**
-* można stworzyć zawodnika z ujemnym wzrostem i wagą (co ciekawe, system podpowiada nam w jakim systemie miar podać wzrost, jednak nie okresla tego przy wadze)
-* można stworzyć zawodnika, którego data urodzenia jest dzisiejsza/ z przyszłości
-* numer telefonu nie wymaga wpisania cyfr
-* podczas uzupełniania danych gracza użycie przycisku "clear" nie wyczyszcza danych, a jedynie cofa wykonaną ostatnią czynność
-* formularz nie podpowiada nam jakie dane są błędnie uzupełnione (oprócz podkreślenia konieczności uzupełnienia obowiązkowych danych z gwiazdką). Wobec tego, kiedy wpisałam niewłaściwy format maila (bez @) strona nie podpowiedziała mi tego, tylko uzyskałam komunikat, że nie mogę stworzyć zawodnika
-* można wpisać datę meczu z przyszłości
-* nie można dodać raportu przez główny przycisk - po kliknięciu w przycisk "dodaj raport", jesteśmy przekierowani na panel z meczami
-* można ustawić niestandardowy czas gry, nietypową ilość części meczu
-* literówki
+**5. Do you notice any mistakes? Or does something seem wrong to you?**
+* it is possible to create a player with a negative height and weight (interestingly, the system tells us in which measurement system to enter the height, but does not specify this with the weight)
+* it is possible to create a player whose date of birth is today/from the future
+* phone number does not require entering numbers
+* when completing a player's data, using the 'clear' button does not clear the data, but only undoes the last action performed
+* The form does not tell us what data is incorrectly filled in (apart from highlighting the need to fill in compulsory data with an asterisk). Thus, when I entered the wrong email format (no @), the page did not prompt me, but only gave me the message that I could not create a player
+* a match date from the future can be entered
+* it is not possible to add a report via the main button - when you click on the "add report" button, you are redirected to the match panel
+* non-standard playing time, non-standard number of game parts can be set
+* typos
 
 ### Subtask 5 - Jira
-Dołączyłam do zespołu
+I have joined the team
 
-# TASK 2 - przypadki testowe (test cases)
-### Subtask 1 - pisanie przypadków testowych na podstawie User Story
-[Link do mojego zadania numer 1 :seedling:](https://docs.google.com/document/d/1xZzAiv-qPUc-sOcceb53-VZilA6fl0uwffPWm7YxOIE/edit?usp=sharing)
-### Subtask 2 - pisanie przypadków testowych na podstawie własnych doświadczeń
-[Link do mojego zadania numer 2 :herb:](https://docs.google.com/document/d/1FPu1Hi3YssMdmY61RP9hfx1K_zwJDi-lV-BI50-fq6I/edit?usp=sharing)
-### Subtask 3 - po co piszemy test case'y?
+# TASK 2 - test cases
+### Subtask 1 - writing test cases based on the User Story
+[Link to my task number 1 :seedling:](https://docs.google.com/document/d/1xZzAiv-qPUc-sOcceb53-VZilA6fl0uwffPWm7YxOIE/edit?usp=sharing)
+### Subtask 2 - writing test cases based on your own experience
+[Link to my task number 2 :herb:](https://docs.google.com/document/d/1FPu1Hi3YssMdmY61RP9hfx1K_zwJDi-lV-BI50-fq6I/edit?usp=sharing)
+### Subtask 3 - why do we write test cases?
 ![alt text](https://testerzy.pl/assets/img/articles/old/jest-jedna-odpowiedz.jpg)
 
-A tak na poważnie... :mag_right: Tworzenie test case'ów jest moim zaniem jednym z najistotniejszych zadań testera oprogramowania. Wymyślanie różnych przypadków testowych nie tylko wzmacnia naszą testerską docierkliwość i kreatywność w wymyślaniu problemów, ale przede wszystkim daje pewność, że w trakcie naszej pracy nie umknęła nam żadna funkcjonalność. Zbiór takich przypadków testowych stanie się później także bazą sporządzanych przez nas raportów testów. Test case'y mówią bardzo wiele o testowanej stronie/aplikacji, wobec czego stanowią również nieocenioną pomoc dla nowych członków zespołu pracującego na danym projekcie, którzy chcą się z nią zapoznać. 
+And seriously... :mag_right: Creating test cases is, in my opinion, one of the most essential tasks of a software tester. Coming up with different test cases not only strengthens our tester's inquisitiveness and creativity in coming up with problems, but above all ensures that we have not missed any functionality in the course of our work. A collection of such test cases will later also become the basis for our test reports. Test cases say a lot about the website/application being tested, so they are also invaluable help for new team members working on a given project who want to get acquainted with it. 
 
-### Subtask 4 - pisanie przypadków testowych na podstawie własnych doświadczeń (aplikacja mobilna PickEatUp)
-[Link do mojego zadania numer 4 :four_leaf_clover:](https://docs.google.com/document/d/1ggp4R4D1-amPfFjD827dhJ1Jy-3eLA9R2AbQxq7ZL14/edit?usp=sharing)
+### Subtask 4 - writing test cases based on own experiences (PickEatUp mobile application)
+[Link to my task number 4 :four_leaf_clover:](https://docs.google.com/document/d/1ggp4R4D1-amPfFjD827dhJ1Jy-3eLA9R2AbQxq7ZL14/edit?usp=sharing)
 
-# TASK 3 - raportowanie błędów
-### Subtask 1 - utworzenie formatki do zgłaszania błędów systemu
-[Oto moja formatka! :sunflower:](https://docs.google.com/spreadsheets/d/1NW57GwwUnjMHU6PSPcICeUSy3ALyG7JaiKGPpA1wJE4/edit?usp=sharing)
-### Subtask 2 - testowanie według planów testów i raportowanie błędów
-Wszystko jest tam :point_up:
-### Subtask 3 - raport z wykonanych testów
-[Jest i on :muscle:](https://docs.google.com/document/d/1pV_uc5rgfgzhnrVOhAIunLe-NPP7Kt1eJiM27s-mhgY/edit?usp=sharing)
-### Subtask 4 - sesja testów eksploracyjnych
-[Moim zadaniem jest obsessive-compulsive tour :fire:](https://docs.google.com/spreadsheets/d/18SOzG8UrxqBPdEnDUFCoeiyL4_LCXVI-8x2n0KvR5UQ/edit?usp=sharing)
+# TASK 3 - bugs reporting
+### Subtask 1 - creation of a form for reporting system bugs
+[Here is my form! :sunflower:](https://docs.google.com/spreadsheets/d/1NW57GwwUnjMHU6PSPcICeUSy3ALyG7JaiKGPpA1wJE4/edit?usp=sharing)
+### Subtask 2 - testing according to test plans and error reporting
+Everything is there :point_up:
+### Subtask 3 - report on tests carried out
+[Here it is :muscle:](https://docs.google.com/document/d/1pV_uc5rgfgzhnrVOhAIunLe-NPP7Kt1eJiM27s-mhgY/edit?usp=sharing)
+### Subtask 4 - exploratory test session
+[My job is an obsessive-compulsive tour :fire:](https://docs.google.com/spreadsheets/d/18SOzG8UrxqBPdEnDUFCoeiyL4_LCXVI-8x2n0KvR5UQ/edit?usp=sharing)
 
-# TASK 4 - testowanie aplikacji mobilnych
-### Subtask 1 - utworzenie formatki do zgłaszania błędów systemu
-[Jest i ona! :bowtie:](https://docs.google.com/spreadsheets/d/15tyBRXSrZejbMZvBfMCzaDc_WyZ-M_TNP3H5oGZYQ9A/edit?usp=sharing)
-### Subtask 2 - testowanie eksploracyjne i raportowanie błędów
-Jak wyżej :arrow_up:
-A [tutaj](https://docs.google.com/document/d/1fv_nl57rsRwwreASlPdg1hk3m2VJ0tnw68ZXmIE2W7Q/edit?usp=sharing) dodatkowo raport z tych testów
-### Subtask 3 - do czego służy ta aplikacja?
-**1. Do czego służy ta aplikacja? Jaki jest cel tej aplikacji?**
+# TASK 4 - mobile application testing
+### Subtask 1 - creation of a form for reporting system bugs
+[Here it is! :bowtie:](https://docs.google.com/spreadsheets/d/15tyBRXSrZejbMZvBfMCzaDc_WyZ-M_TNP3H5oGZYQ9A/edit?usp=sharing)
+### Subtask 2 - exploratory testing and bug reporting
+As above :arrow_up:
+And [here](https://docs.google.com/document/d/1fv_nl57rsRwwreASlPdg1hk3m2VJ0tnw68ZXmIE2W7Q/edit?usp=sharing) in addition, a report based on these tests
+### Subtask 3 - what is this application for?
+**1. What is this application for? What is the purpose of this application?**
 
-Aplikacja ta służy przede wszystkim wystawianiu różnych produktów lub usług do sprzedaży/oddania/wymiany. Użytkownicy platformy mogą z niej korzystać będąc “nadawcą” lub “odbiorcą” przedmiotu danej aukcji. Celem aplikacji jest również zarobek, zarówno dla użytkowników, którzy skutecznie zakończyli swoją aukcję sprzedażą; dla użytkowników, którzy zyskali tym jakiś przedmiot/usługę, ale także dla twórców aplikacji, dzięki zyskowi z prowizji sprzedaży.
+This application is primarily used to list various products or services for sale/gift/exchange. Users of the platform can use it by being the 'sender' or 'receiver' of an auction item. The purpose of the app is also to make money, both for the users who have successfully completed their auction with a sale; for the users who have gained an item/service by doing so, but also for the creators of the app, thanks to the profit from the sales commission.
 
-**2. Kto ma być użytkownikiem końcowym aplikacji?**
+**2. Who is to be the end user of the application?**
 
-Użytkownikiem końcowym aplikacji jest osoba, która poszukuje dobrej platformy oferującej pośrednictwo w różnego typu transakcjach. Może to być zatem cały przekrój użytkowników: studentka chemii, która zaoferuje korepetycje, młode małżeństwo, które chce pozbyć się niepotrzebnej szafy, czy nastolatek, który sprzedając starą kurtkę pragnie powiększyć swoje kieszonkowe. Dla wszystkich tych grup ważna jednak w aplikacji będzie intuicyjność, prostota oraz wygoda działania.
+The end user of the application is a person who is looking for a good platform offering to broker different types of transactions. It can therefore be a cross-section of users: a chemistry student offering to tutor, a young couple wanting to get rid of an unwanted wardrobe, or a teenager who wants to increase his or her pocket money by selling an old jacket. For all these groups, however, the intuitiveness, simplicity and convenience of the application will be important.
 
-**3. Czy według Ciebie ta aplikacja jest user friendly?**
+**3. In your opinion, is this application user friendly?**
 
-Aplikacja OLX jest user friendly. Za przyjazność interfejsu względem użytkownika odpowiada między innymi przejrzysty panel zawierający najważniejsze funkcjonalności, znajdujący się w dolnej części ekranu (w zasięgu kciuka). Dzięki temu rozpoznanie struktury aplikacji nie zajmuje wiele czasu. Łatwo dostępna jest także wyszukiwarka, która znajduje się w oczekiwanym miejscu (górna część ekranu). Aplikacja potrafi generować powiadomienia push, dzięki czemu użytkownik nawet bez wchodzenia w nią jest w stanie dowiedzieć się o jakiejś zaistniałej akcji. OLX dba także o bezpieczeństwo użytkownika i jego płatności, ofertując możliwość skorzystania z popularnych metod płatności, jak np. Blik. Aplikacja zawiera w sobie jednak również takie niedociągnięcia, jak brak możliwości pracy w trybie offline (choćby wybranych funkcjonalności), czy też brak wyraźnego wsparcia osób niepełnosprawnych (np. wzrokowo, czy słuchowo) w korzystaniu z niej.
+The OLX application is user friendly. The user-friendliness of the interface is due, among other things, to the clear panel containing the most important functionalities, located at the bottom of the screen (within reach of the thumb). Thanks to this, it does not take long to recognise the structure of the application. The search engine is also easily accessible and is located in the expected location (top of the screen). The application is able to generate push notifications, so that the user is able to find out about an action that has occurred even without entering the application. OLX also takes care of the user's security and payment by offering the possibility to use popular payment methods such as Blik. However, the application also has shortcomings, such as the lack of offline capability (at least of selected functionalities), or the lack of clear support for people with disabilities (e.g. visual or auditory) in using it.
 
-**4. Jak byś usprawniła aplikację? Co byś w niej poprawiła? Czy masz jakiś pomysł na dodatkową funkcjonalność?**
+**4. How would you improve the application? What would you improve about it? Do you have any ideas for additional functionality?**
 
-Aplikacja, choć dopracowana, nie jest pozbawiona wad. W moim odczuciu niedoskonały jest system szybkiego dodawania danej oferty (bez wchodzenia w nią) do ulubionych. Przycisk serca, który do tego służy jest na tyle mały, że wielokrotnie omyłkowo klikałam minimalnie obok przycisku, co skutkowało wejściem w ofertę. Do aplikacji dodałabym również licznik ofert obserwowanych, gdyż po osiągnięciu puli 150 ofert aplikacja blokuje możliwość dodawania kolejnych. Dodanie licznika pomogłoby użytkownikowi kontrolować tę liczbę. Jak wspomniałam w poprzednim punkcie, rozwinęłabym też w aplikacji szersze wsparcie dla osób niepełnosprawnych, by również swobodnie mogły z niej korzystać
+The app, although refined, is not without its flaws. I feel that the system for quickly adding a particular offer (without entering it) to favourites is imperfect. The heart button that is used for this is so small that many times I mistakenly clicked minimally next to the button, which resulted in entering the offer. I would also add a counter for watched offers to the app, as once the pool of 150 offers is reached, the app blocks the ability to add more. Adding a counter would help the user keep track of this number. As I mentioned in the previous point, I would also develop more support for people with disabilities in the app so that they could also use it freely.
 
-**5. Jakie dostrzegasz różnice pomiędzy testowaniem aplikacji internetowej a natywnej?**
+**5. What differences do you see between testing a web application and a native application?**
 
-Odniosłam wrażenie, że aplikacja natywna częściej może wywołać bezpośrednią interakcję z urządzeniem, z którego korzystamy. Może się zdarzyć, że odeśle nas bezpośrednio do ustawień urządzenia, czy też poprosi nas o zgodę na wykorzystanie jego zasobów (np. zdjęć). Testując aplikację natywną mamy większą możliwość zbadać jej wpływ i działanie oraz kompatybilność z danym urządzeniem (wersja oprogramowania, rozdzielczość ekranu). W statystykach możemy zauważyć jej zasobożerność, zarówno pamięciową, jak i baterii. Testując aplikację internetową zmuszeni jesteśmy korzystać z "pośrednika", którego rolę pełni przeglądarka. Okraja to proces testowania z wspomnianych już procesów i zdecydowanie go spłyca. 
+I was under the impression that the native app is more likely to trigger a direct interaction with the device we are using. It might send us directly to the device's settings or ask us for permission to use its resources (e.g. photos). By testing a native application, we have a greater opportunity to examine its impact and performance, as well as its compatibility with the device in question (software version, screen resolution). In the statistics, we can see its resource consumption, both memory and battery. When testing a web application, we are forced to use an 'intermediary', whose role is played by the browser. This robs the testing process of the aforementioned processes and makes it considerably shallower. 
 
-### Subtask 4 - testy aplikacji mobilnej i webowej
+### Subtask 4 - mobile and web application tests
 
 [Jira :mortar_board:](https://challengetesting.atlassian.net/jira/software/projects/CTP/boards/1)
 
@@ -115,11 +115,11 @@ Odniosłam wrażenie, że aplikacja natywna częściej może wywołać bezpośre
 [Bug#4 SwipeTo](https://drive.google.com/file/d/1Xrzgafv8grcAYKcgWdGjRHNW-8mwcsj2/view?usp=share_link)
 
 # TASK 5 - SQL part 1
-### Subtask 1 - krótki kurs podstaw SQL
+### Subtask 1 - a short course in SQL basics
 
-Poznałam:
+I have learned:
 
-* składnię i kolejność wykonywania instrukcji dla:
+* syntax and order of execution for:
 SELECT (*, LIKE, TOP)
 
 FROM
@@ -130,7 +130,7 @@ ORDER BY
 
 GROUP BY
 
-* operatory porównania:
+* comparison operators:
 
 =
 
@@ -150,7 +150,7 @@ GROUP BY
 
 !>
 
-* operatory logiczne:
+* logical operators:
 
 AND
 
@@ -166,7 +166,7 @@ OR
 
 IS NULL / IS NOT NULL
 
-* funkcje skalarne:
+* scalar functions:
 
 GETDATE
 
@@ -176,7 +176,7 @@ LOWER
 
 DATEDIFF (HOUR, MONTH, YEAR etc.)
 
-* funkcje agregujące:
+* aggregation functions:
 
 COUNT ()
 
@@ -188,7 +188,7 @@ MIN ()
 
 * AS
 
-### Subtask 3 - kilka zadań na rozgrzewkę
+### Subtask 3 - some warm-up tasks
 
 **1. Wyświetl tabelę actors w kolejności alfabetycznej sortując po kolumnie surname**
 
