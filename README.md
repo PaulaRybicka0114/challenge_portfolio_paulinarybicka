@@ -302,6 +302,7 @@ SET surname='Miler'
 
 WHERE name='Ania';
 
+![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T6S11.png?raw=true)
 
 **12. Pobrałam za dużo pieniędzy od klienta, który kupił w ostatnim czasie film o id 4. Korzystając z funkcji join sprawdź, jak ma na imię klient i jakiego ma maila. W celu napisania mu wiadomości o pomyłce fantastycznej szefowej.**
 
@@ -315,6 +316,7 @@ ON customers.customers_id = sale.customers_id
 
 AND movie_id = 4;
 
+![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T6S12.png?raw=true)
 
 **13. Na pewno zauważył_ś, że sprzedawca zapomniał wpisać emaila klientce Patrycji. Uzupełnij ten brak wpisując: pati@mail.com**
 
@@ -324,6 +326,7 @@ SET email='pati@mail.com'
 
 WHERE name='Patrycja'
 
+![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T6S13.png?raw=true)
 
 **14. Dla każdego zakupu wyświetl, imię i nazwisko klienta, który dokonał wypożyczenia oraz tytuł wypożyczonego filmu. (wykorzystaj do tego funkcję inner join, zastanów się wcześniej, które tabele Ci się przydadzą do wykonania ćwiczenia).**
 
@@ -335,12 +338,15 @@ INNER JOIN customers ON sale.customer_id = customers.customer_id
 
 INNER JOIN movies ON sale.movie_id = movies.movie_id;
 
+![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T6S14.png?raw=true)
+
 **15. W celu anonimizacji danych, chcesz stworzyć pseudonimy swoich klientów. - Dodaj kolumnę o nazwie ‘pseudonym’ do tabeli customer,- Wypełnij kolumnę w taki sposób, aby pseudonim stworzył się z dwóch pierwszych liter imienia i ostatniej litery nazwiska. Np. Natalie Pilling → Nag**
 
 ALTER TABLE customers 
 
 ADD pseudonym varchar(20);
 
+![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T6S15.png?raw=true)
 
 UPDATE customers
 
@@ -348,11 +354,13 @@ SET pseudonym = 'Ols'
 
 WHERE customer_id = 1;
 
+
 UPDATE customers
 
 SET pseudonym = 'Kal'
 
 WHERE customer_id = 2;
+
 
 UPDATE customers
 
@@ -360,11 +368,13 @@ SET pseudonym = 'Anr'
 
 WHERE customer_id = 3;
 
+
 UPDATE customers
 
 SET pseudonym = 'Par'
 
 WHERE customer_id = 4;
+
 
 UPDATE customers
 
@@ -372,11 +382,14 @@ SET pseudonym = 'Mao'
 
 WHERE customer_id = 5;
 
+
 UPDATE customers
 
 SET pseudonym = 'Nag'
 
 WHERE customer_id = 6;
+
+![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T6S15_2.png?raw=true)
 
 **16. Wyświetl tytuły filmów, które zostały zakupione, wyświetl tabelę w taki sposób, aby tytuły się nie powtarzały.**
 
@@ -385,6 +398,8 @@ SELECT DISTINCT title
 FROM movies
 
 JOIN sale ON movies.movie_id = sale.movie_id;
+
+![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T6S16.png?raw=true)
 
 **17. Wyświetl wspólną listę imion wszystkich aktorów i klientów, a wynik uporządkuj alfabetycznie. (Wykorzystaj do tego funkcji UNION)**
 
@@ -400,6 +415,8 @@ FROM customers
 
 ORDER BY name ASC;
 
+![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T6S17.png?raw=true)
+
 **18. Polskę opanowała inflacja i nasz sklepik z filmami również dotknął ten problem. Podnieś cenę wszystkich filmów wyprodukowanych po 2000 roku o 2,5 $ (Pamiętaj, że dolar to domyślna jednostka- nie używaj jej nigdzie).**
 
 UPDATE movies
@@ -407,6 +424,8 @@ UPDATE movies
 SET price = price + 2.5
 
 WHERE year_of_production > 2000
+
+![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T6S18.png?raw=true)
 
 **19. Wyświetl imię i nazwisko aktora o id 4 i tytuł filmu, w którym zagrał**
 
@@ -420,11 +439,15 @@ JOIN movies ON cast.movie_id=movies.movie_id
 
 AND actors.actor_id = 4;
 
+![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T6S19.png?raw=true)
+
 **20. A gdzie nasza HONIA!? Dodaj do tabeli customers nową krotkę, gdzie customer_id = 7, name = Honia, surname = Stuczka-Kucharska, email = honia@mail.com oraz pseudonym = Hoa**
 
 INSERT INTO customers (customer_id, name, surname, email, pseudonym)
 
 VALUES (7, 'Honia', 'Stuczka-Kucharska', 'honia@mail.com', 'Hoa');
+
+![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T6S20.png?raw=true)
 
 ### Subtask 2 - test
 
