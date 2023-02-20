@@ -451,4 +451,8 @@ VALUES (7, 'Honia', 'Stuczka-Kucharska', 'honia@mail.com', 'Hoa');
 
 ### Subtask 2 - test
 
+Écru question set from [Get ISTQB](http://getistqb.com/)
+
+![img](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T6S2t.png?raw=true)
+
 ### Subtask 3 - we create a portfolio
