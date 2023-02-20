@@ -54,7 +54,7 @@ I have joined the team
 ### Subtask 2 - writing test cases based on your own experience
 [Link to my task number 2 :herb:](https://docs.google.com/document/d/1FPu1Hi3YssMdmY61RP9hfx1K_zwJDi-lV-BI50-fq6I/edit?usp=sharing)
 ### Subtask 3 - why do we write test cases?
-![alt text](https://testerzy.pl/assets/img/articles/old/jest-jedna-odpowiedz.jpg)
+![alt text](https://mailtrap.io/wp-content/uploads/2020/06/testing_meme3.png))
 
 And seriously... :mag_right: Creating test cases is, in my opinion, one of the most essential tasks of a software tester. Coming up with different test cases not only strengthens our tester's inquisitiveness and creativity in coming up with problems, but above all ensures that we have not missed any functionality in the course of our work. A collection of such test cases will later also become the basis for our test reports. Test cases say a lot about the website/application being tested, so they are also invaluable help for new team members working on a given project who want to get acquainted with it. 
 
