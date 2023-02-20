@@ -192,21 +192,13 @@ MIN ()
 
 **1. Display the actors table in alphabetical order sorting by surname column**
 
-SELECT *
-
-FROM actors
-
-ORDER BY surname ASC;
+![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/0.png?raw=true)
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/0756a88acb0b78133b5be0f71d9c2ea0324287f2/T5S1.png?raw=true)
 
 **2. View the film that was made in 2019**
 
-SELECT *
-
-FROM movies
-
-WHERE year_of_production = 2019;
+![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/2.png?raw=true)
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T5S2.png?raw=true)
 
@@ -214,79 +206,49 @@ WHERE year_of_production = 2019;
 
 SELECT *
 
-FROM movies
-
-WHERE year_of_production BETWEEN 1900 AND 1999;
+![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/3.png?raw=true)
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T5S3.png?raw=true)
 
 **4. Display ONLY the title and price of films that cost less than $7**
 
-SELECT title, price
-
-FROM movies
-
-WHERE price < 7;
+![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/4.png?raw=true)
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T5S4.png?raw=true)
 
 **5. Use the logical operator AND to display actors with actor_id between 4-7 (inclusive). DO NOT use the BETWEEN operator.**
 
-SELECT *
-
-FROM actors
-
-WHERE actor_id >= '4' AND actor_id <= '7';
+![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/5.png?raw=true)
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T5S5.png?raw=true)
 
 **6. Display customers with id 2, 4, 6, use logical condition for this**
 
-SELECT *
-
-FROM customers
-
-WHERE customer_id IN (2, 4, 6);
+![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/6.png?raw=true)
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T5S6.png?raw=true)
 
 **7. Display customers with id 1, 3, 5, use the AND operator for this**
 
-SELECT *
-
-FROM customers
-
-WHERE customer_id BETWEEN 1 AND 5 AND customer_id %2 <> 0;
+![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/7.png?raw=true)
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T5S7.png?raw=true)
 
 **8. Display the data of all persons in the 'actors' table whose first name begins with the string "An"**
 
-SELECT *
-
-FROM actors
-
-WHERE name LIKE 'An%';
+![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/8.png?raw=true)
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T5S8.png?raw=true)
 
 **9. Display the data of a customer who does not have an e-mail address provided**
 
-SELECT *
-
-FROM customers
-
-WHERE email IS NULL;
+![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/9.png?raw=true)
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T5S9.png?raw=true)
 
 **10. Display all films with a price above $9 and an ID between 2 and 8 movie_id**
 
-SELECT *
-
-FROM movies
-
-WHERE price > 9 AND movie_id BETWEEN 2 AND 8;
+![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/10.png?raw=true)
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T5S10.png?raw=true)
 
@@ -296,156 +258,65 @@ WHERE price > 9 AND movie_id BETWEEN 2 AND 8;
 
 **11. I made a mistake in typing the name of Ani Miler - I typed Muler. Find and apply a function that corrects my breakneck error**
 
-UPDATE customers
-
-SET surname='Miler'
-
-WHERE name='Ania';
+![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/11.png?raw=true)
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T6S11.png?raw=true)
 
 **12. I downloaded too much money from a customer who recently bought a film with id 4. Using the join function, check the customer's name and email.**
 
-SELECT name, email
-
-FROM customers
-
-JOIN sale
-
-ON customers.customers_id = sale.customers_id
-
-AND movie_id = 4;
+![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/12.png?raw=true)
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T6S12.png?raw=true)
 
 **13. I'm sure you noticed that the seller forgot to enter the email of customer Patricia. Make up for this omission by entering: pati@mail.com**
 
-UPDATE customers
-
-SET email='pati@mail.com'
-
-WHERE name='Patrycja'
+![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/13.png?raw=true)
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T6S13.png?raw=true)
 
 **14. For each purchase, display the name of the customer who made the rental and the title of the film rented. (Use the inner join function to do this, think beforehand which tables you will need for the exercise).**
 
-SELECT name, surname, title
-
-FROM sale
-
-INNER JOIN customers ON sale.customer_id = customers.customer_id
-
-INNER JOIN movies ON sale.movie_id = movies.movie_id;
+![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/14.png?raw=true)
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T6S14.png?raw=true)
 
 **15. In order to anonymise your data, you want to create pseudonyms for your customers. - Add a column called 'pseudonym' to the customer table,- Fill in the column so that the pseudonym is created from the first two letters of the first name and the last letter of the last name. E.g. Natalie Pilling → Nag**
 
-ALTER TABLE customers 
-
-ADD pseudonym varchar(20);
+![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/15_1.png?raw=true)
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T6S15.png?raw=true)
 
-UPDATE customers
-
-SET pseudonym = 'Ols'
-
-WHERE customer_id = 1;
-
-
-UPDATE customers
-
-SET pseudonym = 'Kal'
-
-WHERE customer_id = 2;
-
-
-UPDATE customers
-
-SET pseudonym = 'Anr'
-
-WHERE customer_id = 3;
-
-
-UPDATE customers
-
-SET pseudonym = 'Par'
-
-WHERE customer_id = 4;
-
-
-UPDATE customers
-
-SET pseudonym = 'Mao'
-
-WHERE customer_id = 5;
-
-
-UPDATE customers
-
-SET pseudonym = 'Nag'
-
-WHERE customer_id = 6;
+![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/15_2.png?raw=true)
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T6S15_2.png?raw=true)
 
 **16. Display the titles of the films that have been purchased, display the table so that the titles are not repeated.**
 
-SELECT DISTINCT title
-
-FROM movies
-
-JOIN sale ON movies.movie_id = sale.movie_id;
+![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/16.png?raw=true)
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T6S16.png?raw=true)
 
 **17. Display a common list of names of all actors and clients, and put the result in alphabetical order. (Use the UNION function for this)**
 
-SELECT name
-
-FROM actors
-
-UNION
-
-SELECT name
-
-FROM customers
-
-ORDER BY name ASC;
+![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/17.png?raw=true)
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T6S17.png?raw=true)
 
 **18. Poland has been overtaken by inflation and our video shop has also been affected. Increase the price of all films made after 2000 by $2.5 (Remember, the dollar is the default unit-don't use it anywhere).**
 
-UPDATE movies
-
-SET price = price + 2.5
-
-WHERE year_of_production > 2000
+![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/18.png?raw=true)
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T6S18.png?raw=true)
 
 **19. Display the name of the actor with id 4 and the title of the film he played in**
 
-SELECT name, surname, title
-
-FROM cast
-
-JOIN actors ON cast.actor_id=actors.actor_id
-
-JOIN movies ON cast.movie_id=movies.movie_id
-
-AND actors.actor_id = 4;
+![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/19.png?raw=true)
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T6S19.png?raw=true)
 
 **20. Add a new tuple to the customers table, where customer_id = 7, name = Honia, surname = Stuczka-Kucharska, email = honia@mail.com and pseudonym = Hoa**
 
-INSERT INTO customers (customer_id, name, surname, email, pseudonym)
-
-VALUES (7, 'Honia', 'Stuczka-Kucharska', 'honia@mail.com', 'Hoa');
+![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/20.png?raw=true)
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T6S20.png?raw=true)
 
