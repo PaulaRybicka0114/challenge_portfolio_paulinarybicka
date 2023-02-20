@@ -4,7 +4,7 @@
 ### Subtask 1 - entry test
 8/10 points :tada:
 ### Subtask 3 - README file formatting in GitHub - why did you decide to participate in challenge_portfolio?
-Hi, my name is Paulina and in 2023 I have decided to change a lot of things in my life - one of those things is work. Although I am a ~~hysterian~~ historian (:laughing:), testing interested me enough to take on this challenge. At this stage I am a complete rookie, but there is a lot of willingness in me to learn and grow. I would liklanguage conversion from Polish to English and vice versae to become a responsible and prepared junior tester in the coming year, so that I can then get better and better at pointing out mistakes to others (joking!). I believe the DareIT challenge will enable me to do this. :blush:
+Hi, my name is Paulina and in 2023 I have decided to change a lot of things in my life - one of those things is work. Although I am a ~~hysterian~~ historian, testing interested me enough to take on this challenge. At this stage I am a complete rookie, but there is a lot of willingness in me to learn and grow. I would like to become a responsible and prepared junior tester in the coming year, so that I can then get better and better at pointing out mistakes to others (joking!). I believe the DareIT challenge will enable me to do this. :blush:
 ### Subtask 4 - exploratory tests - explore the application
 **1. What is this application about and what is it used for?**
 * the application is a kind of database on individual players - their names, age, position, club, as well as reports of matches played
@@ -190,7 +190,7 @@ MIN ()
 
 ### Subtask 3 - some warm-up tasks
 
-**1. Wyświetl tabelę actors w kolejności alfabetycznej sortując po kolumnie surname**
+**1. Display the actors table in alphabetical order sorting by surname column**
 
 SELECT *
 
@@ -200,7 +200,7 @@ ORDER BY surname ASC;
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/0756a88acb0b78133b5be0f71d9c2ea0324287f2/T5S1.png?raw=true)
 
-**2. Wyświetl film, który powstał w 2019 roku**
+**2. View the film that was made in 2019**
 
 SELECT *
 
@@ -210,7 +210,7 @@ WHERE year_of_production = 2019;
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T5S2.png?raw=true)
 
-**3. Wyświetl wszystkie filmy, które powstały między 1900 a 1999 rokiem**
+**3. View all films made between 1900 and 1999**
 
 SELECT *
 
@@ -220,7 +220,7 @@ WHERE year_of_production BETWEEN 1900 AND 1999;
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T5S3.png?raw=true)
 
-**4. Wyświetl JEDYNIE tytuł i cenę filmów, które kosztują poniżej 7$**
+**4. Display ONLY the title and price of films that cost less than $7**
 
 SELECT title, price
 
@@ -230,7 +230,7 @@ WHERE price < 7;
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T5S4.png?raw=true)
 
-**5. Użyj operatora logicznego AND, aby wyświetlić aktorów o actor_id pomiędzy 4-7 (włącznie). NIE UŻYWAJ operatora BETWEEN**
+**5. Use the logical operator AND to display actors with actor_id between 4-7 (inclusive). DO NOT use the BETWEEN operator.**
 
 SELECT *
 
@@ -240,7 +240,7 @@ WHERE actor_id >= '4' AND actor_id <= '7';
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T5S5.png?raw=true)
 
-**6. Wyświetl klientów o id 2, 4, 6, wykorzystaj do tego warunek logiczny**
+**6. Display customers with id 2, 4, 6, use logical condition for this**
 
 SELECT *
 
@@ -250,7 +250,7 @@ WHERE customer_id IN (2, 4, 6);
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T5S6.png?raw=true)
 
-**7. Wyświetl klientów o id 1, 3, 5, wykorzystaj do tego operator AND**
+**7. Display customers with id 1, 3, 5, use the AND operator for this**
 
 SELECT *
 
@@ -260,7 +260,7 @@ WHERE customer_id BETWEEN 1 AND 5 AND customer_id %2 <> 0;
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T5S7.png?raw=true)
 
-**8. Wyświetl dane wszystkich osób z tabeli 'actors', których imię zaczyna się od ciągu "An"**
+**8. Display the data of all persons in the 'actors' table whose first name begins with the string "An"**
 
 SELECT *
 
@@ -270,7 +270,7 @@ WHERE name LIKE 'An%';
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T5S8.png?raw=true)
 
-**9. Wyświetl dane kliena, który nie ma podanego adresu e-mail**
+**9. Display the data of a customer who does not have an e-mail address provided**
 
 SELECT *
 
@@ -280,7 +280,7 @@ WHERE email IS NULL;
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T5S9.png?raw=true)
 
-**10. Wyświetl wszystkie filmy, których cena wynosi powyżej 9$ oraz ich ID mieści się pomiędzy 2 i 8 movie_id**
+**10. Display all films with a price above $9 and an ID between 2 and 8 movie_id**
 
 SELECT *
 
@@ -292,9 +292,9 @@ WHERE price > 9 AND movie_id BETWEEN 2 AND 8;
 
 # TASK 5 - SQL part 2
 
-### Subtask 1 - krótki kurs podstaw SQL
+### Subtask 1 - a short course in SQL basics
 
-**11. Popełniłam błąd wpisując nazwisko Ani Miler – wpisałam Muler. Znajdź i zastosuj funkcję, która poprawi mój karkołomny błąd**
+**11. I made a mistake in typing the name of Ani Miler - I typed Muler. Find and apply a function that corrects my breakneck error**
 
 UPDATE customers
 
@@ -304,7 +304,7 @@ WHERE name='Ania';
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T6S11.png?raw=true)
 
-**12. Pobrałam za dużo pieniędzy od klienta, który kupił w ostatnim czasie film o id 4. Korzystając z funkcji join sprawdź, jak ma na imię klient i jakiego ma maila. W celu napisania mu wiadomości o pomyłce fantastycznej szefowej.**
+**12. I downloaded too much money from a customer who recently bought a film with id 4. Using the join function, check the customer's name and email.**
 
 SELECT name, email
 
@@ -318,7 +318,7 @@ AND movie_id = 4;
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T6S12.png?raw=true)
 
-**13. Na pewno zauważył_ś, że sprzedawca zapomniał wpisać emaila klientce Patrycji. Uzupełnij ten brak wpisując: pati@mail.com**
+**13. I'm sure you noticed that the seller forgot to enter the email of customer Patricia. Make up for this omission by entering: pati@mail.com**
 
 UPDATE customers
 
@@ -328,7 +328,7 @@ WHERE name='Patrycja'
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T6S13.png?raw=true)
 
-**14. Dla każdego zakupu wyświetl, imię i nazwisko klienta, który dokonał wypożyczenia oraz tytuł wypożyczonego filmu. (wykorzystaj do tego funkcję inner join, zastanów się wcześniej, które tabele Ci się przydadzą do wykonania ćwiczenia).**
+**14. For each purchase, display the name of the customer who made the rental and the title of the film rented. (Use the inner join function to do this, think beforehand which tables you will need for the exercise).**
 
 SELECT name, surname, title
 
@@ -340,7 +340,7 @@ INNER JOIN movies ON sale.movie_id = movies.movie_id;
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T6S14.png?raw=true)
 
-**15. W celu anonimizacji danych, chcesz stworzyć pseudonimy swoich klientów. - Dodaj kolumnę o nazwie ‘pseudonym’ do tabeli customer,- Wypełnij kolumnę w taki sposób, aby pseudonim stworzył się z dwóch pierwszych liter imienia i ostatniej litery nazwiska. Np. Natalie Pilling → Nag**
+**15. In order to anonymise your data, you want to create pseudonyms for your customers. - Add a column called 'pseudonym' to the customer table,- Fill in the column so that the pseudonym is created from the first two letters of the first name and the last letter of the last name. E.g. Natalie Pilling → Nag**
 
 ALTER TABLE customers 
 
@@ -391,7 +391,7 @@ WHERE customer_id = 6;
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T6S15_2.png?raw=true)
 
-**16. Wyświetl tytuły filmów, które zostały zakupione, wyświetl tabelę w taki sposób, aby tytuły się nie powtarzały.**
+**16. Display the titles of the films that have been purchased, display the table so that the titles are not repeated.**
 
 SELECT DISTINCT title
 
@@ -401,7 +401,7 @@ JOIN sale ON movies.movie_id = sale.movie_id;
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T6S16.png?raw=true)
 
-**17. Wyświetl wspólną listę imion wszystkich aktorów i klientów, a wynik uporządkuj alfabetycznie. (Wykorzystaj do tego funkcji UNION)**
+**17. Display a common list of names of all actors and clients, and put the result in alphabetical order. (Use the UNION function for this)**
 
 SELECT name
 
@@ -417,7 +417,7 @@ ORDER BY name ASC;
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T6S17.png?raw=true)
 
-**18. Polskę opanowała inflacja i nasz sklepik z filmami również dotknął ten problem. Podnieś cenę wszystkich filmów wyprodukowanych po 2000 roku o 2,5 $ (Pamiętaj, że dolar to domyślna jednostka- nie używaj jej nigdzie).**
+**18. Poland has been overtaken by inflation and our video shop has also been affected. Increase the price of all films made after 2000 by $2.5 (Remember, the dollar is the default unit-don't use it anywhere).**
 
 UPDATE movies
 
@@ -427,7 +427,7 @@ WHERE year_of_production > 2000
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T6S18.png?raw=true)
 
-**19. Wyświetl imię i nazwisko aktora o id 4 i tytuł filmu, w którym zagrał**
+**19. Display the name of the actor with id 4 and the title of the film he played in**
 
 SELECT name, surname, title
 
@@ -441,7 +441,7 @@ AND actors.actor_id = 4;
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T6S19.png?raw=true)
 
-**20. A gdzie nasza HONIA!? Dodaj do tabeli customers nową krotkę, gdzie customer_id = 7, name = Honia, surname = Stuczka-Kucharska, email = honia@mail.com oraz pseudonym = Hoa**
+**20. Add a new tuple to the customers table, where customer_id = 7, name = Honia, surname = Stuczka-Kucharska, email = honia@mail.com and pseudonym = Hoa**
 
 INSERT INTO customers (customer_id, name, surname, email, pseudonym)
 
@@ -451,4 +451,4 @@ VALUES (7, 'Honia', 'Stuczka-Kucharska', 'honia@mail.com', 'Hoa');
 
 ### Subtask 2 - test
 
-### Subtask 3 - tworzymy portfolio
+### Subtask 3 - we create a portfolio
