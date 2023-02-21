@@ -327,3 +327,5 @@ SELECT *
 ![img](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T6S2t.png?raw=true)
 
 ### Subtask 3 - we create a portfolio
+
+[My portfolio](https://github.com/PaulaRybicka0114/Portfolio.git)
