@@ -119,74 +119,18 @@ I was under the impression that the native app is more likely to trigger a direc
 
 I have learned:
 
-* syntax and order of execution for:
-SELECT (*, LIKE, TOP)
+| syntax and order of execution | comparison operators | logical operators | scalar functions                 | aggregation functions | others
+|:-----------------------------:|:--------------------:|:-----------------:|:--------------------------------:|:---------------------:|:-------:|
+| SELECT (*, LIKE, TOP)         |          =           | AND               | GETDATE                          | COUNT ()              | JOIN    |
+| FROM                          |         !=           |   BETWEEN         | UPPER                            | SUM ()                | AS      |
+| WHERE                         |         <>           |    IN             | LOWER                            | MIN ()                |  UNION  |
+| GROUP BY                      |          >           |    LIKE           | DATEDIFF (HOUR, MONTH, YEAR etc.)|                       |         |
+| ORDER BY (ASC, DESC)          |          <           |    NOT            |                                  |                       |         |
+|  UPDATE (SET)                 |         >=           |    OR             |                                  |                       |         |
+|    ALTER TABLE (ADD)          |         <=           |    IS NULL        |                                  |                       |         |
+|  INSERT INTO                  |         !<           |    IS NOT NULL    |                                  |                       |         |
+|                               |         !>           |                   |                                  |                       |         |
 
-FROM
-
-WHERE
-
-ORDER BY
-
-GROUP BY
-
-* comparison operators:
-
-=
-
-!=
-
-<>
-
->
-
-<
-
- >=
-
-<=
-
-!<
-
-!>
-
-* logical operators:
-
-AND
-
-BETWEEN
-
-IN
-
-LIKE
-
-NOT
-
-OR
-
-IS NULL / IS NOT NULL
-
-* scalar functions:
-
-GETDATE
-
-UPPER
-
-LOWER
-
-DATEDIFF (HOUR, MONTH, YEAR etc.)
-
-* aggregation functions:
-
-COUNT ()
-
-SUM ()
-
-MIN ()
-
-* JOIN
-
-* AS
 
 ### Subtask 3 - some warm-up tasks
 
@@ -252,7 +196,7 @@ SELECT *
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T5S10.png?raw=true)
 
-# TASK 5 - SQL part 2
+# TASK 6 - SQL part 2
 
 ### Subtask 1 - a short course in SQL basics
 
