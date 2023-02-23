@@ -148,8 +148,6 @@ I have learned:
 
 **3. View all films made between 1900 and 1999**
 
-SELECT *
-
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/3.png?raw=true)
 
 ![image](https://github.com/PaulaRybicka0114/challenge_portfolio_paulinarybicka/blob/main/T5S3.png?raw=true)
